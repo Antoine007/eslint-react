@@ -1,8 +1,5 @@
 {
-  "plugins": [
-    "react",
-    "react-hooks"
-  ],
+  "plugins": ["react", "react-hooks", "jsx-a11y", "import"],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 8,
@@ -40,27 +37,15 @@
     "node": true,
     "mocha": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended"
-  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "rules": {
-    "semi": [
-      "error",
-      "never"
-    ],
-    "quotes": [
-      "error",
-      "double"
-    ],
+    "semi": ["error", "never"],
+    "quotes": ["error", "double"],
     "no-console": 0, // allow use of console (off by default in the node environment)
     "comma-dangle": 0, // warn about trailing commas
     "no-duplicate-case": 2, // disallow a duplicate case label.
     "no-irregular-whitespace": 2, // disallow irregular whitespace outside of strings and comments
-    "object-curly-spacing": [
-      2,
-      "always"
-    ],
+    "object-curly-spacing": [2, "always"],
     // best practies
     "complexity": 0, // warn about cyclomatic complexity allowed in a program
     "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
